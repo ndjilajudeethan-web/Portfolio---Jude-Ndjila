@@ -92,8 +92,7 @@
     align-items: flex-start;
     border: 2px solid #000;
     border-radius: 12px;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 80%;   
 }
 .fiche__opinion {
     display: flex;
@@ -101,6 +100,7 @@
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 .fiche__difficulte,
 .fiche__fierte {
@@ -145,8 +145,7 @@
     }
     .popup[open]{
         align-items: center;
-        margin-left: 0%;
-        margin-right: 0%;
+       
     }
     .portfolio__competences{
         justify-content: center;
