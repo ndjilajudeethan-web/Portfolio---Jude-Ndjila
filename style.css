@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.portfolio {
+    font-family: Arial, sans-serif;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.portfolio__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 20px;
+}
+.portfolio__container__main-titre {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.portfolio__separateur {
+    flex: 1;
+}
+.projet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.projet__image {
+    width: 100%;
+    height: auto;
+}
+.projet__titre,
+.projet__label,
+.projet__item_description,
+.projet__surtitre,
+.projet__bouton {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.projet__liste {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+.projet__item, .projet__bouton {
+    cursor: pointer;
+}
+.portfolio__competences {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.portfolio__competence {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 5px;
+}
+.portfolio__competence-barre {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 5px;
+}
+.popup[open] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid #000;
+    border-radius: 12px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.fiche__opinion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+}
+.fiche__difficulte,
+.fiche__fierte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+@media (max-width: 600px) {
+    .portfolio{
+        margin-left:0%;
+        margin-right:0%
+    }
+    .portfolio__header{
+        text-align: center;
+    }
+    .portfolio__intro{
+        align-items: center;                      
+    }
+    .portfolio__main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio__separateur{
+        flex: 1;
+    }
+    .projet {
+        align-items: center;
+        text-align: center;
+    }
+    .projet__liste{
+        justify-content: center;
+    }
+    .popup[open]{
+        align-items: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .portfolio__competences{
+        justify-content: center;
+    }
+}
+.portfolio{
+    background-color: var(--couleur-secondaire);
+}
+.portfolio__surtitre{
+    font-family: 'Space Mono';
+    color: var(--couleur-accent2);
+    font-size: small;
+}
+.portfolio__titre{
+    font-family:'Playfair Display';
+    font-style: italic;
+}
+.portfolio__titre-coupure{
+    color: var(--couleur-accent1);
+}
+.portfolio__sous-titre{
+    font-family: 'DM Sans';
+    color: var(--couleur-accent2);
+    font-size: small;
+}
+.portfolio__intro-titre{
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+.portfolio__intro-texte{
+    font-family: 'DM Sans';
+    color: var(--couleur-primaire);
+    font-size: small;
+}
+h2 {
+    font-family: 'Space Mono';
+    font-size: small;
+    color: var(--couleur-accent2);
+}
+.projet{
+    background-color: var(--couleur-tertiaire);
+}
+.projet__surtitre{
+    font-family: 'Space Mono';
+    font-size: smaller;
+    color: var(--couleur-accent2);
+}
+.projet__titre{
+    font-family: 'Playfair Display';
+    font-size: large;
+}
+.projet__label{
+    font-family: 'Space Mono';
+    font-size: small;
+}
+button{
+    border: 1px solid var(--couleur-accent2);
+    border-radius: 4px;
+    background-color: var(--couleur-secondaire);
+    font-family: 'Space Mono';
+    font-size: x-small;
+}
+.projet__item_description{
+    font-family: 'DM Sans';
+    color: var(--couleur-accent2);
+    font-size: small;
+}
+.fiche__surtitre{
+    font-family: 'Space Mono';
+    font-size: smaller;
+    color: var(--couleur-accent2);
+}
+.fiche__titre{
+    font-family: 'Playfair Display';
+    font-size: large;
+}
+.fiche__description{
+    font-family: 'DM Sans';
+    color: var(--couleur-accent2);
+}
+.fiche__opinion h4 {
+    font-family: 'Space Mono';
+    font: lighter;
+}
+.fiche__opinion p {
+    font-family: 'DM Sans';
+    font-size: small;
+}
+.portfolio__competence h3 {
+    font-family: 'Space Mono';
+    font-size: small;
+    font: lighter;
+
+}
